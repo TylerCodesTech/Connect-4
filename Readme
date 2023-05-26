@@ -1,0 +1,67 @@
+Connect 4 Python Game
+This is a simple implementation of the Connect 4 game using Python and the tkinter library. Connect 4 is a two-player game in which players take turns dropping colored discs into a grid. The goal is to be the first player to connect four discs of the same color in a row, column, or diagonal.
+
+Prerequisites
+To run this game, you need to have Python installed on your system. The code is compatible with Python 3.
+
+How to Run the Game
+Save the code provided in a file with a .py extension, for example, connect4.py
+
+Open a terminal or command prompt and navigate to the directory where the file is saved.
+
+Run the game by executing the following command:
+
+Copy code
+python connect4.py
+The game window will open, and you can start playing Connect 4.
+
+Game Rules
+The game is played on a 6x7 grid.
+
+Two players take turns dropping their colored discs into the grid. Player 1 uses the color red, and Player 2 uses the color yellow.
+
+To make a move, click on the column where you want to drop your disc.
+
+The disc will fall to the lowest empty position in the selected column.
+
+The objective is to connect four discs of the same color horizontally, vertically, or diagonally.
+
+The game ends when one player connects four discs or there are no more empty positions in the grid (a tie).
+
+After the game ends, a message will be displayed, indicating the winner or a tie.
+
+Game Settings
+The game provides the following settings:
+
+Difficulty: You can choose between three difficulty levels: Easy, Medium, and Hard. The computer player's strategy will vary depending on the selected difficulty level.  "known issue on hard where the computer auto wins."
+
+Computer Player: You can enable or disable the computer player. When enabled, the computer will play as Player 2.
+
+Replay: After a game ends, you can click the "Replay" button to start a new game with the same settings.
+
+Game Statistics
+The game keeps track of the following statistics:
+
+Player 1 Wins: The number of games won by Player 1.
+
+Player 2 Wins: The number of games won by Player 2 (including the computer player).
+
+Total Games: The total number of games played.
+
+Player 1 Games: The number of games played by Player 1.
+
+Player 2 Games: The number of games played by Player 2.
+
+Ties: The number of tied games.
+
+The statistics are displayed in the "Statistics" tab of the game window.
+
+Enjoy playing Connect 4!
+Feel free to modify the code and add your own features to enhance the game. Have fun playing Connect 4!
+
+
+Features I thought of adding but was to lazy:
+1.)making it circles like the OG game
+2.)color selector to make it cool
+3.)maybe a undo move?
+4.)player naming might also be a cool add on
