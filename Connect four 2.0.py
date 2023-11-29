@@ -1,8 +1,7 @@
---needs update gameboard
---statistic not working
---medium bot setting might be to hard
---splash screen 
---maybe music, might be to lazy for that
+#V3
+#Add a splash screen with a more robust settings tab
+#make the computer player more responsive to play against
+#Move the player naming to the settings, maybe add a save function?
 
 
 import tkinter as tk
@@ -189,7 +188,7 @@ def button_click(col):
             update_turn_label()
             # If it's the AI's turn, trigger the AI move after a short delay
             if current_player == '2' and single_player_mode:  # assuming you have a way to set `single_player_mode`
-                window.after(500, make_ai_move)  # AI will make a move after 500ms
+                window.after(500, make_ai_move)  # AI will make a move after 500ms -- might wanna decrease this
 
 
 def make_ai_move():
@@ -316,10 +315,10 @@ def minimax(board, depth, alpha, beta, maximizingPlayer):
     # First, check if there is a winner or if it is a tie.
     winner = check_winner('1')
     if winner == '1':
-        return -1  # Assuming '1' is the human player and should be minimized
+        return -1  #human player and should be minimized
     winner = check_winner('2')
     if winner == '2':
-        return 1   # Assuming '2' is the AI player and should be maximized
+        return 1   #AI player and should be maximized --incase i would wanna watch..
 
     if depth == 0 or check_tie():
         return 0  # A depth of 0 or a tie is considered neutral and returns 0
